@@ -27,5 +27,5 @@ function AppRoutes() {
 }
 
 export default function App() {
-  return <HashRouter><ThemeProvider><AuthProvider><CartProvider><AppRoutes /></CartProvider></AuthProvider></ThemeProvider></BrowserRouter>
+  return <HashRouter><ThemeProvider><AuthProvider><CartProvider><AppRoutes /></CartProvider></AuthProvider></ThemeProvider></HashRouter>
 }
