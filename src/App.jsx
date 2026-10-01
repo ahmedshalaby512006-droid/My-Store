@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { AuthProvider } from './contexts/AuthContext.jsx'
 import { AuthContext } from './contexts/AuthContextValue.js'
 import { CartProvider } from './contexts/CartContext.jsx'
@@ -27,5 +27,5 @@ function AppRoutes() {
 }
 
 export default function App() {
-  return <BrowserRouter><ThemeProvider><AuthProvider><CartProvider><AppRoutes /></CartProvider></AuthProvider></ThemeProvider></BrowserRouter>
+  return <HashRouter><ThemeProvider><AuthProvider><CartProvider><AppRoutes /></CartProvider></AuthProvider></ThemeProvider></BrowserRouter>
 }
